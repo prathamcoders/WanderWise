@@ -5,6 +5,8 @@ import Homepage from "./Homepage";
 import DestinationSelectPage from "./DestinationSelectPage";
 import ContactUs from "./ContactUs";
 import AboutUs from "./About";
+import PasswordLoginWithFirebase from "./PasswordLoginFirebase";
+import RegisterAndLogin from "./RegisterAndLogin";
 
 const App = () => {
     return (
@@ -27,6 +29,14 @@ const App = () => {
                     <Route
                         path="/about"
                         element={<AboutUs />}
+                    ></Route>
+                    <Route
+                        path="/login"
+                        element={<PasswordLoginWithFirebase />}
+                    ></Route>
+                    <Route
+                        path="/signup"
+                        element={<RegisterAndLogin />}
                     ></Route>
                 </Routes>
             </Router>

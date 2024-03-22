@@ -32,12 +32,16 @@ export const Navbar = () => {
                     </NavLink>
                 </ul>
                 <div className="">
-                    <button className="px-4 py-1 bg-transparent text-black border-2 border-white rounded-3xl w-24">
-                        Login
-                    </button>
-                    <button className="px-4 py-1 bg-transparent text-black border-2 border-white rounded-3xl w-24">
-                        Sign Up
-                    </button>
+                    <NavLink to="/login">
+                        <button className="px-4 py-1 bg-transparent text-black border-2 border-white rounded-3xl w-24">
+                            Login
+                        </button>
+                    </NavLink>
+                    <NavLink to="/signup">
+                        <button className="px-4 py-1 bg-transparent text-black border-2 border-white rounded-3xl w-24">
+                            Sign Up
+                        </button>
+                    </NavLink>
                 </div>
             </nav>
         </div>

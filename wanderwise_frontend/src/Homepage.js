@@ -1,8 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import BG from "../../wanderwise_frontend/src/Assets/beach.jpg";
-import { Navbar } from "./components/Navbar";
 
 const Homepage = () => {
     return (
@@ -32,7 +30,6 @@ const Homepage = () => {
                         </Link>
                         <button className="border-black border-solid border-2 px-4 py-2 rounded-3xl ">
                             How it Works
-                            <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
                         </button>
                     </div>
                 </div>
