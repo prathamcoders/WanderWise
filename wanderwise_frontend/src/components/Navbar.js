@@ -3,8 +3,11 @@ import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
     return (
-        <div className="bg-transparent fixed">
-            <nav className="flex justify-between items-center px-12 py-5 h-20">
+        <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+            <nav
+                className="px-12 py-5 h-20"
+                style={{ display: "flex", justifyContent: "space-around" }}
+            >
                 <div>
                     <h1>WANDER WISE</h1>
                 </div>
