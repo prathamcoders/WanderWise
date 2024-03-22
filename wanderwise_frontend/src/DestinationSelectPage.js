@@ -5,6 +5,7 @@ import Rajasthan from "../../wanderwise_frontend/src/Assets/rajasthan.jpg";
 import Kerala from "../../wanderwise_frontend/src/Assets/kerala.jpg";
 import London from "../../wanderwise_frontend/src/Assets/london.jpg";
 import Manali from "../../wanderwise_frontend/src/Assets/manali2.jpg";
+import BG from "../../wanderwise_frontend/src/Assets/beach.jpg";
 
 const Card = ({ title, content, bgImage }) => {
     return (
@@ -13,7 +14,7 @@ const Card = ({ title, content, bgImage }) => {
             style={{
                 backgroundImage: `url(${bgImage})`,
                 backgroundSize: "cover",
-                backgroundPosition: "cente",
+                backgroundPosition: "centre",
                 backgroundRepeat: "no-repeat",
                 height: "350px",
                 width: "400px",
@@ -38,7 +39,10 @@ const Card = ({ title, content, bgImage }) => {
 const LayoutWithThreeCards = () => {
     return (
         <>
-            <div className="flex-col justify-center items-center h-screen py-14 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ">
+            <div
+                className="flex-col justify-center items-center h-screen py-14"
+                style={{ backgroundImage: `url(${BG})` }}
+            >
                 <div className="grid grid-cols-3 gap-4 py-5 px-14">
                     <Card
                         title="Card 1"

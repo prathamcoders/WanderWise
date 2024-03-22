@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
     return (
-        <div className="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <div className="bg-transparent">
             <nav
                 className="px-12 py-5 h-20"
-                style={{ display: "flex", justifyContent: "space-around" }}
+                style={{ display: "flex", justifyContent: "space-between" }}
             >
                 <div>
-                    <h1>WANDER WISE</h1>
+                    <h1 className="text-2xl font-bold">WANDER WISE</h1>
                 </div>
                 <ul className="navbar-list flex gap-7">
                     <NavLink
@@ -17,12 +17,6 @@ export const Navbar = () => {
                         className="navbar-link home-link"
                     >
                         Home
-                    </NavLink>
-                    <NavLink
-                        to="/products"
-                        className="navbar-link products-link"
-                    >
-                        Products
                     </NavLink>
                     <NavLink
                         to="/contact"
