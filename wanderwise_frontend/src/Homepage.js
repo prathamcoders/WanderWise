@@ -24,13 +24,15 @@ const Homepage = () => {
                     </p>
                     <div className="flex py-4 gap-7">
                         <Link to="/destinationselectpage">
-                            <button className="px-4 py-2 bg-blue-400 rounded-3xl">
+                            <button className="border-black border-solid border-2 px-4 py-2 rounded-3xl w-40">
                                 Plan Trip
                             </button>
                         </Link>
-                        <button className="border-black border-solid border-2 px-4 py-2 rounded-3xl ">
-                            How it Works
-                        </button>
+                        <Link to="/flightselect">
+                            <button className="border-black border-solid border-2 px-4 py-2 rounded-3xl w-40">
+                                Cheap Flights
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

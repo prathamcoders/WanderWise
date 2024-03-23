@@ -7,6 +7,8 @@ import ContactUs from "./ContactUs";
 import AboutUs from "./About";
 import PasswordLoginWithFirebase from "./PasswordLoginFirebase";
 import RegisterAndLogin from "./RegisterAndLogin";
+// import FlightSelect from "./FlightSelect";
+import ParentComponent from "./ParentComponant";
 
 const App = () => {
     return (
@@ -37,6 +39,10 @@ const App = () => {
                     <Route
                         path="/signup"
                         element={<RegisterAndLogin />}
+                    ></Route>
+                    <Route
+                        path="/flightselect"
+                        element={<ParentComponent />}
                     ></Route>
                 </Routes>
             </Router>
