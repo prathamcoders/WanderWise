@@ -7,8 +7,7 @@ import ContactUs from "./ContactUs";
 import AboutUs from "./About";
 import PasswordLoginWithFirebase from "./PasswordLoginFirebase";
 import RegisterAndLogin from "./RegisterAndLogin";
-// import FlightSelect from "./FlightSelect";
-import ParentComponent from "./ParentComponant";
+import FlightSelect from "./FlightSelect";
 
 const App = () => {
     return (
@@ -41,8 +40,8 @@ const App = () => {
                         element={<RegisterAndLogin />}
                     ></Route>
                     <Route
-                        path="/flightselect"
-                        element={<ParentComponent />}
+                        path="/FlightSelect"
+                        element={<FlightSelect />}
                     ></Route>
                 </Routes>
             </Router>

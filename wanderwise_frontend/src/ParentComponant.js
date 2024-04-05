@@ -1,20 +1,16 @@
 import React from "react";
-import FlightSelect from "./FlightSelect";
-import getJsonData from "./Serp";
-const ParentComponent = () => {
-    // Function to handle the Serp API call
+import FlightSelect from "./FlightSelect"; // Import the FlightSelect component
+import getData from "./serp";
 
-    const handleSerpApiCall = async (formData) => {
-        const { startDate, endDate, textInput1, textInput2 } = formData;
-        // Perform the API call using formData
-        console.log("Form Data for Serp API:", startDate);
-        // Replace this with your actual Serp API call using formData
-        // const res = await fetch();
-        // console.log(res);
+const ParentComponent = () => {
+    // Define the handleSerpApiCall function
+    const handleSerpApiCall = (formData) => {
+        getData({ ...formData });
     };
 
     return (
         <div>
+            {/* Render the FlightSelect component and pass handleSerpApiCall as a prop */}
             <FlightSelect handleSerpApiCall={handleSerpApiCall} />
         </div>
     );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import getData from "./serp";
 
 const FlightSelect = ({ handleSerpApiCall }) => {
     // State variables to hold the form data
@@ -10,20 +11,6 @@ const FlightSelect = ({ handleSerpApiCall }) => {
     // Function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // Call the function passed as a prop and pass the form data
-        handleSerpApiCall({
-            startDate,
-            endDate,
-            textInput1,
-            textInput2,
-        });
-
-        // Reset the form after submission (if needed)
-        // setStartDate("");
-        // setEndDate("");
-        // setTextInput1("");
-        // setTextInput2("");
     };
 
     return (
